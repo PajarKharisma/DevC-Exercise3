@@ -1,2 +1,1 @@
-# DevC JavaScript Development Course
-Exercise 3
+shorturl.at/ACJO7
