@@ -16,7 +16,7 @@ function getData(key, val) {
 function loadData() {
     limit = $('#filter').val();
     var items = [];
-    $("#badan tr").remove();
+    //$("#badan tr").remove();
     $.each(data, function(key, val){
         switch (limit) {
             case '0':
@@ -35,7 +35,8 @@ function loadData() {
         }
     });
     
-    $(items.join("")).appendTo("#badan");
+    $('#badan').html(items.join(""));
+    //$(items.join("")).appendTo("#badan");
 }
 
 function loadJson() {
